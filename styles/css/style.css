@@ -1,0 +1,688 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+header {
+  background-color: #f5f5f5;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.brand-logo {
+  height: 48px;
+}
+
+.brand-logo:hover {
+  cursor: pointer;
+}
+
+.brand-name {
+  color: #0D92F4;
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 32px;
+}
+
+.brand-name-mobile {
+  color: #0D92F4;
+  display: none;
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 24px;
+}
+
+.location {
+  background-color: rgba(33, 33, 33, 0.2);
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+.location img {
+  width: 12px;
+}
+.location span {
+  color: #ffffff;
+  font-size: 12px;
+}
+.location #location-desktop {
+  display: block;
+}
+.location #location-tablet {
+  display: none;
+}
+
+.cta-btn {
+  align-items: center;
+  background-color: #0D92F4;
+  border-radius: 32px;
+  padding: 4px;
+  padding-left: 16px;
+}
+.cta-btn img {
+  width: 24px;
+}
+.cta-btn span {
+  color: #ffffff;
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+}
+.cta-btn .whatsapp-circle {
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+  width: 24px;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+nav li {
+  margin-right: 48px;
+}
+
+nav li:last-child {
+  margin-right: 0px;
+}
+
+nav a {
+  color: #3da7f6;
+  font-size: 16px;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #0966aa;
+}
+
+.dropdown {
+  background-color: rgba(245, 245, 245, 0.8);
+  display: none;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index: 200;
+}
+
+.dropdown a {
+  color: #3da7f6;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+}
+.dropdown a:hover {
+  color: #0966aa;
+}
+
+.hero {
+  background-color: #212121;
+  background-image: url("../../assets/images/png/hero-image-min.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .container {
+  min-height: 80vh;
+}
+
+.hero-content {
+  background-color: rgba(33, 33, 33, 0.4);
+  width: 100vw;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(to bottom, #f9d423, #ff4e50);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.hero-content .cta-btn {
+  background-color: #C62E2E;
+  margin-bottom: -30px;
+  padding: 8px;
+  padding-left: 24px;
+}
+.hero-content .cta-btn img {
+  width: 32px;
+}
+.hero-content .cta-btn span {
+  font-size: 32px;
+}
+.hero-content .cta-btn .whatsapp-circle {
+  height: 50px;
+  width: 50px;
+}
+
+.cars .container {
+  min-height: 80vh;
+}
+
+.featured-cars .car-picture {
+  width: 60%;
+  border-radius: 8px;
+}
+.featured-cars .car-picture img {
+  width: 100%;
+}
+.featured-cars .car-details {
+  width: 40%;
+}
+.featured-cars .car-details h6 {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+.featured-cars .car-details h4 {
+  font-size: 60px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+.featured-cars .car-details .car-price {
+  padding: 16px 64px;
+  background-color: #3da7f6;
+  border-radius: 32px 0 0 0;
+}
+.featured-cars .car-details span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #0966aa;
+}
+.featured-cars .car-details h5 {
+  font-size: 48px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+.featured-cars .car-details .test-drive-btn {
+  padding: 8px 16px;
+  font-size: 24px;
+  font-family: "Racing Sans One", sans-serif;
+  background-color: #C62E2E;
+  color: #ffffff;
+}
+
+.car-details-left {
+  align-items: flex-end;
+}
+
+.car-title-left {
+  text-align: right;
+}
+
+.car-price-left {
+  border-radius: 0 32px 0 0;
+}
+
+.featured-cars-gap {
+  margin-bottom: 60px;
+}
+
+.feature-card h5 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  max-width: 300px;
+}
+
+.feature-row h4 {
+  font-size: 96px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+}
+
+.feature-row-gap {
+  margin-bottom: 60px;
+}
+
+.contact .cta-btn {
+  background-color: #C62E2E;
+  padding: 8px;
+  padding-left: 24px;
+}
+.contact .cta-btn img {
+  width: 32px;
+}
+.contact .cta-btn span {
+  font-size: 32px;
+}
+.contact .cta-btn .whatsapp-circle {
+  height: 50px;
+  width: 50px;
+}
+
+.contact-row {
+  background-color: #3da7f6;
+  border-radius: 8px;
+  padding: 64px;
+}
+.contact-row h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+.contact-row h6 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #f5f5f5;
+}
+footer .container {
+  min-height: 10vh;
+}
+
+.footer-left {
+  max-width: 250px;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #f35e3e;
+}
+
+.social-icons img {
+  width: 32px;
+}
+
+.footer-row-gap {
+  margin-bottom: 64px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif, sans-serif;
+  background: #0966aa;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+button {
+  border-radius: 8px;
+  font-family: "Jost", sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center-flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-column-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-top-space-between {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flex-small-gap {
+  gap: 8px;
+}
+
+.flex-medium-gap {
+  gap: 16px;
+}
+
+.flex-large-gap {
+  gap: 32px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+/* MD - iPad - Reference Device */
+@media only screen and (max-width: 1090px) {
+  .container {
+    max-width: 904px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 16px;
+  }
+  nav li {
+    margin-right: 32px;
+  }
+  .brand-name {
+    font-size: 28px;
+  }
+  .location #location-desktop {
+    display: none;
+  }
+  .location #location-tablet {
+    display: block;
+  }
+  .hero .container {
+    min-height: 60vh;
+  }
+  .hero-content h1 {
+    font-size: 56px;
+  }
+  .featured-cars .car-details .car-title h6 {
+    font-size: 24px;
+  }
+  .featured-cars .car-details .car-title h4 {
+    font-size: 52px;
+  }
+  .featured-cars .car-details .car-price {
+    padding: 16px 32px;
+  }
+  .featured-cars .car-details .car-price span {
+    font-size: 16px;
+  }
+  .featured-cars .car-details .car-price h5 {
+    font-size: 40px;
+  }
+  .featured-cars .car-details .test-drive-btn {
+    font-size: 20px;
+  }
+  .feature-row img {
+    width: 300px;
+  }
+  .feature-row h4 {
+    font-size: 80px;
+  }
+  .feature-card img {
+    width: 175px;
+  }
+  .feature-card h5 {
+    font-size: 32px;
+    max-width: 250px;
+  }
+  .contact .cta-btn img {
+    width: 24px;
+  }
+  .contact .cta-btn span {
+    font-size: 24px;
+  }
+  .contact .cta-btn .whatsapp-circle {
+    height: 40px;
+    width: 40px;
+  }
+  .contact iframe {
+    width: 100%;
+  }
+  .contact-row {
+    padding: 32px;
+  }
+  .contact-row h2 {
+    font-size: 32px;
+  }
+  .contact-row h6 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .container {
+    max-width: 774px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .featured-cars .car-details .car-price span {
+    font-size: 16px;
+  }
+  .featured-cars .car-details .car-price h5 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .container {
+    max-width: 684px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  nav li {
+    margin-right: 24px;
+  }
+  .featured-cars .car-details .car-title h6 {
+    font-size: 20px;
+  }
+  .featured-cars .car-details .car-title h4 {
+    font-size: 38px;
+  }
+  .featured-cars .car-details .car-price span {
+    font-size: 16px;
+  }
+  .featured-cars .car-details .car-price h5 {
+    font-size: 32px;
+  }
+}
+/* SM - iPhone - Reference Device */
+@media only screen and (max-width: 450px) {
+  .hero {
+    overflow: hidden;
+  }
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container {
+    max-width: 363px;
+  }
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .brand-logo {
+    height: 30px;
+    margin-right: 0;
+  }
+  .brand-name {
+    display: none;
+  }
+  .brand-name-mobile {
+    display: block;
+  }
+  .location {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .hero .container {
+    min-height: 50vh;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .hero-content .cta-btn {
+    margin-bottom: -25px;
+    padding: 4px;
+    padding-left: 16px;
+  }
+  .hero-content .cta-btn img {
+    width: 24px;
+  }
+  .hero-content .cta-btn span {
+    font-size: 24px;
+  }
+  .hero-content .cta-btn .whatsapp-circle {
+    height: 40px;
+    width: 40px;
+  }
+  .featured-cars {
+    flex-direction: column;
+  }
+  .featured-cars .below {
+    order: 2;
+  }
+  .featured-cars .above {
+    order: 1;
+  }
+  .featured-cars .car-picture {
+    width: 100%;
+  }
+  .featured-cars .car-details {
+    margin-top: -100px;
+    width: 100%;
+  }
+  .featured-cars .car-details .car-title {
+    background-color: rgba(245, 245, 245, 0.4);
+    padding: 8px;
+  }
+  .featured-cars .car-details .car-title h6 {
+    font-size: 24px;
+  }
+  .featured-cars .car-details .car-title h4 {
+    font-size: 52px;
+  }
+  .featured-cars .car-details .car-price {
+    padding: 16px 32px;
+  }
+  .featured-cars .car-details .car-price span {
+    font-size: 16px;
+  }
+  .featured-cars .car-details .car-price h5 {
+    font-size: 40px;
+  }
+  .featured-cars .car-details .test-drive-btn {
+    font-size: 20px;
+  }
+  .car-details-left {
+    align-items: stretch;
+  }
+  .car-title-left {
+    text-align: left;
+  }
+  .car-price-left {
+    border-radius: 32px 0 0 0;
+  }
+  .feature-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .feature-row h4 {
+    font-size: 64px;
+    text-align: center;
+  }
+  .contact-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer-left {
+    max-width: 220px;
+    font-size: 14px;
+  }
+  .social-icons {
+    gap: 8px;
+  }
+  .social-icons img {
+    width: 24px;
+  }
+  .creator-credit {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

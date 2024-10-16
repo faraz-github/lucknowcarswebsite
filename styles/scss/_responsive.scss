@@ -1,0 +1,380 @@
+/* MD - iPad - Reference Device */
+@media only screen and (max-width: 1090px) {
+  // main.scss
+  .container {
+    max-width: 904px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  // _header.scss
+  nav li {
+    margin-right: 32px;
+  }
+
+  .brand-name {
+    font-size: 28px;
+  }
+
+  .location {
+    #location-desktop {
+      display: none;
+    }
+
+    #location-tablet {
+      display: block;
+    }
+  }
+
+  // _heroSection.scss
+  .hero {
+    .container {
+      min-height: 60vh;
+    }
+  }
+
+  .hero-content {
+    h1 {
+      font-size: 56px;
+    }
+  }
+
+  // _carsSection.scss
+  .featured-cars {
+    .car-details {
+      .car-title {
+        h6 {
+          font-size: 24px;
+        }
+        h4 {
+          font-size: 52px;
+        }
+      }
+      .car-price {
+        padding: 16px 32px;
+        span {
+          font-size: 16px;
+        }
+        h5 {
+          font-size: 40px;
+        }
+      }
+      .test-drive-btn {
+        font-size: 20px;
+      }
+    }
+  }
+
+  // _featureSection.scss
+  .feature-row {
+    img {
+      width: 300px;
+    }
+    h4 {
+      font-size: 80px;
+    }
+  }
+
+  .feature-card {
+    img {
+      width: 175px;
+    }
+    h5 {
+      font-size: 32px;
+      max-width: 250px;
+    }
+  }
+
+  // _contactSection.scss
+  .contact {
+    .cta-btn {
+      img {
+        width: 24px;
+      }
+      span {
+        font-size: 24px;
+      }
+      .whatsapp-circle {
+        height: 40px;
+        width: 40px;
+      }
+    }
+    iframe {
+      width: 100%;
+    }
+  }
+  .contact-row {
+    padding: 32px;
+
+    h2 {
+      font-size: 32px;
+    }
+    h6 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  // main.scss
+  .container {
+    max-width: 774px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  // _carsSection.scss
+  .featured-cars {
+    .car-details {
+      .car-price {
+        span {
+          font-size: 16px;
+        }
+        h5 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  // main.scss
+  .container {
+    max-width: 684px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  // _header.scss
+  nav li {
+    margin-right: 24px;
+  }
+
+  // _carsSection.scss
+  .featured-cars {
+    .car-details {
+      .car-title {
+        h6 {
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 38px;
+        }
+      }
+
+      .car-price {
+        span {
+          font-size: 16px;
+        }
+        h5 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+/* SM - iPhone - Reference Device */
+@media only screen and (max-width: 450px) {
+  // main.scss
+  .hero {
+    overflow: hidden;
+  }
+
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    max-width: 363px;
+  }
+
+  // _header.scss
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: $Z-Index-Header;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .brand-logo {
+    height: 30px;
+    margin-right: 0;
+  }
+
+  .brand-name {
+    display: none;
+  }
+
+  .brand-name-mobile {
+    display: block;
+  }
+
+  .location {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  // _heroSection.scss
+  .hero {
+    .container {
+      min-height: 50vh;
+    }
+  }
+
+  .hero-content {
+    h1 {
+      font-size: 32px;
+    }
+
+    .cta-btn {
+      margin-bottom: -25px;
+      padding: 4px;
+      padding-left: 16px;
+      img {
+        width: 24px;
+      }
+      span {
+        font-size: 24px;
+      }
+      .whatsapp-circle {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+
+  // _carsSection.scss
+  .featured-cars {
+    flex-direction: column;
+
+    .below {
+      order: 2;
+    }
+
+    .above {
+      order: 1;
+    }
+    .car-picture {
+      width: 100%;
+    }
+    .car-details {
+      margin-top: -100px;
+      width: 100%;
+      .car-title {
+        background-color: rgba($color: $Light-BG, $alpha: 0.4);
+        padding: 8px;
+        h6 {
+          font-size: 24px;
+        }
+        h4 {
+          font-size: 52px;
+        }
+      }
+      .car-price {
+        padding: 16px 32px;
+        span {
+          font-size: 16px;
+        }
+        h5 {
+          font-size: 40px;
+        }
+      }
+      .test-drive-btn {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .car-details-left {
+    align-items: stretch;
+  }
+  .car-title-left {
+    text-align: left;
+  }
+
+  .car-price-left {
+    border-radius: 32px 0 0 0;
+  }
+
+  // _featureSection.scss
+  .feature-row {
+    flex-direction: column;
+    gap: 32px;
+    h4 {
+      font-size: 64px;
+      text-align: center;
+    }
+  }
+
+  // _contactSection.scss
+  .contact-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  // _footer.scss
+  .footer-left {
+    max-width: 220px;
+    font-size: 14px;
+  }
+
+  .social-icons {
+    img{
+      width: 24px;
+    }
+    gap: 8px;
+  }
+
+  .creator-credit {
+    font-size: 10px;
+  }
+}

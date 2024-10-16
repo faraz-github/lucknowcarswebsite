@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+
+@import "variables";
+@import "header";
+@import "heroSection";
+@import "carsSection";
+@import "featureSection";
+@import "contactSection";
+@import "footer";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font-family, sans-serif;
+  background: $Primary-Dark;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: $Section-Y-Padding;
+  padding-bottom: $Section-Y-Padding;
+}
+
+button {
+  border-radius: $Border-Radius;
+  font-family: $primary-font-family;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center-flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-column-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-top-space-between {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flex-small-gap {
+  gap: 8px;
+}
+
+.flex-medium-gap {
+  gap: 16px;
+}
+
+.flex-large-gap {
+  gap: 32px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+// Putting responsive CSS in last for the cascading effect to work properly
+
+@import "responsive";

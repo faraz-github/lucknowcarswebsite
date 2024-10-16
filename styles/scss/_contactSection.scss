@@ -1,0 +1,38 @@
+.contact {
+  .cta-btn {
+    background-color: $Secondary;
+    padding: 8px;
+    padding-left: 24px;
+    img {
+      width: 32px;
+    }
+    span {
+      font-size: 32px;
+    }
+    .whatsapp-circle {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+.contact-row {
+  background-color: $Primary-Light;
+  border-radius: $Border-Radius;
+  padding: 64px;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: $White;
+    padding: 0;
+    margin: 0;
+  }
+  h6 {
+    font-size: 32px;
+    font-weight: 500;
+    color: $White;
+    padding: 0;
+    margin: 0;
+  }
+}

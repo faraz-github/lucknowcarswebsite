@@ -1,0 +1,29 @@
+footer {
+  padding-top: $Section-Y-Padding / 2;
+  padding-bottom: $Section-Y-Padding / 2;
+  background-color: $Light-BG;
+  .container {
+    min-height: 10vh;
+  }
+}
+
+.footer-left {
+  max-width: 250px;
+}
+
+.footer-right {
+  a {
+    text-decoration: none;
+    color: #f35e3e;
+  }
+}
+
+.social-icons {
+  img {
+    width: 32px;
+  }
+}
+
+.footer-row-gap {
+  margin-bottom: 64px;
+}

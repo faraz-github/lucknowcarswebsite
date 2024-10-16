@@ -1,0 +1,48 @@
+.hero {
+  background-color: $Dark-BG;
+  background-image: url("../../assets/images/png/hero-image-min.png");
+  // Photo by SCREEN POST: https://unsplash.com/photos/a-man-standing-next-to-a-white-car-eJfpmMtXBYU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    min-height: 80vh;
+  }
+}
+
+.hero-content {
+  background-color: rgba($color: $Dark-BG, $alpha: 0.4);
+  width: 100vw;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  text-align: center;
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(to bottom, #f9d423, #ff4e50);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  .cta-btn {
+    background-color: $Secondary;
+    margin-bottom: -30px;
+    padding: 8px;
+    padding-left: 24px;
+    img {
+      width: 32px;
+    }
+    span {
+      font-size: 32px;
+    }
+    .whatsapp-circle {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

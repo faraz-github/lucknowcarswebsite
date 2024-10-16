@@ -1,0 +1,120 @@
+header {
+  background-color: $Light-BG;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.brand-logo {
+  height: 48px;
+}
+
+.brand-logo:hover {
+  cursor: pointer;
+}
+
+.brand-name {
+  color: $Primary;
+  font-family: $secondary-font-family;
+  font-size: 32px;
+}
+
+.brand-name-mobile {
+  color: $Primary;
+  display: none; // Hide by default on larger screens
+  font-family: $secondary-font-family;
+  font-size: 24px;
+}
+
+.location {
+  background-color: rgba($color: $Dark-BG, $alpha: 0.2);
+  border-radius: $Border-Radius;
+  padding: 4px 8px;
+
+  img {
+    width: 12px;
+  }
+
+  span {
+    color: $White;
+    font-size: 12px;
+  }
+
+  #location-desktop {
+    display: block;
+  }
+
+  #location-tablet {
+    display: none;
+  }
+}
+
+.cta-btn {
+  align-items: center;
+  background-color: $Primary;
+  border-radius: 32px;
+  padding: 4px;
+  padding-left: 16px;
+  img {
+    width: 24px;
+  }
+  span {
+    color: $White;
+    font-family: $secondary-font-family;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+  }
+  .whatsapp-circle {
+    background-color: $White;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: none; // Hide by default on larger screens
+  width: 24px;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+nav li {
+  margin-right: 48px;
+}
+
+nav li:last-child {
+  margin-right: 0px;
+}
+
+nav a {
+  color: $Primary-Light;
+  font-size: 16px;
+  font-weight: 500;
+  &:hover {
+    color: $Primary-Dark;
+  }
+}
+
+.dropdown {
+  background-color: rgba($color: $Light-BG, $alpha: 0.8);
+  display: none; // Hide by default on larger screens
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index: $Z-Index-Menu;
+}
+
+.dropdown a {
+  color: $Primary-Light;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  &:hover {
+    color: $Primary-Dark;
+  }
+}

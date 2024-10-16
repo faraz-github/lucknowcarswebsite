@@ -1,0 +1,78 @@
+.cars {
+  .container {
+    min-height: 80vh;
+  }
+}
+
+.featured-cars {
+  .car-picture {
+    width: 60%;
+
+    border-radius: $Border-Radius;
+    img {
+      width: 100%;
+    }
+  }
+
+  .car-details {
+    width: 40%;
+
+    h6 {
+      font-size: 32px;
+      font-weight: 400;
+      padding: 0;
+      margin: 0;
+      color: $White;
+    }
+    h4 {
+      font-size: 60px;
+      font-weight: 700;
+      padding: 0;
+      margin: 0;
+      color: $White;
+    }
+
+    .car-price {
+      padding: 16px 64px;
+      background-color: $Primary-Light;
+      border-radius: 32px 0 0 0;
+    }
+
+    span {
+      font-size: 20px;
+      font-weight: 400;
+      color: $Primary-Dark;
+    }
+    h5 {
+      font-size: 48px;
+      font-weight: 700;
+      padding: 0;
+      margin: 0;
+      color: $White;
+    }
+
+    .test-drive-btn {
+      padding: 8px 16px;
+      font-size: 24px;
+      font-family: $secondary-font-family;
+      background-color: $Secondary;
+      color: $White;
+    }
+  }
+}
+
+.car-details-left {
+  align-items: flex-end;
+}
+
+.car-title-left {
+  text-align: right;
+}
+
+.car-price-left {
+  border-radius: 0 32px 0 0;
+}
+
+.featured-cars-gap {
+  margin-bottom: 60px;
+}
