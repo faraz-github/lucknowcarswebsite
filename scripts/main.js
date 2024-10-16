@@ -5,10 +5,10 @@ let mobileDropdown = document.querySelector(".dropdown");
 toggleImg.addEventListener("click", function () {
   // Toggle between two images
   if (toggleImg.src.endsWith("close.svg")) {
-    toggleImg.src = "../assets/images/svg/menu-primary-open.svg"; // Replace with your close icon
+    toggleImg.setAttribute("src", "assets/images/svg/menu-primary-open.svg");
     mobileDropdown.style.display = "block";
   } else {
-    toggleImg.src = "../assets/images/svg/menu-primary-close.svg"; // Replace with your menu icon
+    toggleImg.setAttribute("src", "assets/images/svg/menu-primary-close.svg");
     mobileDropdown.style.display = "none";
   }
 });
